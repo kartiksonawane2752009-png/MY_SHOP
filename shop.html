@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Online Shop</title>
+    <style>
+        /* 1. NAV BAR COLORS */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Deep Navy from Nav */
+            margin: 0;
+            color: white;
+        }
+
+        header {
+            background-color: #1e293b; /* Lighter Navy from Nav */
+            color: #38bdf8;           /* Sky Blue Accent */
+            padding: 25px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Keeps products tidy on mobile */
+            margin-top: 20px;
+        }
+
+        /* 2. PRODUCT CARDS - Styled like Nav Items */
+        .product {
+            background-color: #1e293b; /* Matches Nav Background */
+            width: 200px;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(56, 189, 248, 0.1); /* Subtle blue border */
+            transition: 0.3s;
+        }
+.cate {
+            background-color: #1e293b; /* Matches Nav Background */
+            width: 30%;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(56, 189, 248, 0.1); /* Subtle blue border */
+            transition: 0.3s;
+        }
+
+h1 {
+background-color: #1e293b; /* Lighter Navy from Nav */
+            color: #38bdf8;           /* Sky Blue Accent */
+            padding: 25px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+        .product:hover {
+            border-color: #38bdf8; /* Glows blue on hover */
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+        }
+
+        .price {
+            color: #38bdf8; /* Price matches the Nav blue */
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+            
+hr {
+background-color:#38bdf8;
+height:3px;
+border:none;
+ }
+        /* 3. BUTTON - Styled like the Blue Box */
+        button {
+            background-color: #38bdf8;
+            color: #0f172a;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+ 
+        button:hover {
+            background-color: #ffffff;
+        }
+
+        a { text-decoration: none; }
+footer {
+    background-color: #1e293b;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Online Shop</h1>
+</header>
+<h2 class=price>Choose Category Of Product:</h2>
+<div style="display:flex ;flex-wrap:wrap ; justify-content:center">
+<div class="cate">
+        <h3>1.</h3><a href="#elec"> <button >Electronics</button></a>
+   </div>
+<div class="cate">
+       <h3>2.</h3> <a href="#cloth"> <button >Clothing</button></a>
+   </div>
+<div class="cate">
+        <h3>3.</h3><a href="#book"> <button >Books</button></a>
+   </div>
+<div class="cate">
+      <h3>4.</h3>  <a href="#ha"> <button >Home Appliances</button></a>
+  </div>
+<div class="cate">
+       <h3>5.</h3> <a href="#sport"> <button >Sports</button></a>
+   </div>
+<div class="cate">
+       <h3>6.</h3> <a href="#bp"> <button >Beauty Products </button></a>
+   </div>
+
+</div>
+<section id="elec">
+<hr>
+<h1>Electronics</h1>
+<div class="container">
+
+    <div class="product">
+        <img src="iphone-15-pro-max.png">
+        <h3>Iphone 17 pro </h3>
+        <p class="price">₹1,54,900 </p>
+       <a href="https://www.amazon.in/iPhone-Pro-512-Promotion-Breakthrough/dp/B0FQF5DG3P?ref_=ast_sto_dp&th=1"> <button >Add to Cart</button></a>
+    </div>
+
+    <div class="product">
+        <img src="lap.png">
+        <h3>MacBook</h3>
+        <p class="price">₹1,32,990</p>
+       <a href="https://www.amazon.in/Apple-MacBook-13-inch-10-core-Unified/dp/B0DZF1485D/ref=sr_1_5?crid=1TSJOKUPPQ7DF&dib=eyJ2IjoiMSJ9.VLeYQd5Gfampur7zh24I1SPlDk8PDJCjOIJDvb2EvEzsAzDQL_A9aCkyVOPP9NH0eCIi5lZVT-jay1CgP0Md1tigRjDk-JbTRWJTCgbcouoam7gbXt4vzvJFOtBEU18_pDNaqIUC-agwHYMdDPMBc6E6WrpwDsnhCQaYftaUhCjzq6yu1fZBjeJJdPFR7jjbmrhj1SwyWtCFVYzbxvSjXO6xzblhT5l0TXCJk.mPRaL38aa-Q0ufVSUqbAF8yQr-UmfYVhT9ZM5SADhMM&dib_tag=se&keywords=MacBook&qid=1772623328&sprefix=macbook%2Caps%2C520&sr=8-5&th=1"> <button>Add to Cart</button></a>
+    </div>
+<div class="product">
+        <img src="ps.png">
+        <h3>Sony PlayStation5 </h3>
+        <p class="price">₹49,990 </p>
+       <a href="https://www.amazon.in/Sony-PlayStation%C2%AE5-Digital-Edition-slim/dp/B0CY5QW186/ref=sr_1_3?crid=S0RQQQN9T5CM&dib=eyJ2IjoiMSJ9.ag8_Ed-E8zTPkP09eaoUh0Il1jB3IYc_1AP8zw-MH_mbpaa7JN5BJUz_Vygtl1grgRfvQAZ0cAAWM2uv9qyknoDzHXvdxuqVRggRIB9jJMYz3dp1Ap1mmn0EPdHySXJu0tuYZuAdb4kk-p40K_PtlXkx_6L9x2DnCQF1U8JHAcMWb-VPX0MfHyq3m7sCFEdaQ1bPtmp8PdPYdxg6mA7fg-42v2qg5fdEAWX0uZhn1Ak.VlmuiCMmO-YTGSBO7kVfzZkIMP92kRZ4-s-a3bbPnhI&dib_tag=se&keywords=ps5&qid=1772625325&sprefix=ps5%2Caps%2C400&sr=8-3"> <button>Add to Cart</button></a>
+    </div>
+
+
+</div>
+<div class="container">
+<div class="product">
+        <img src="tab.png">
+        <h3>Redmi Pad 2</h3>
+        <p class="price">₹15,999 </p>
+       <a href="https://www.amazon.in/Redmi-Pad-Support-AI-Enabled-Graphite/dp/B0FBRS76BR/ref=sr_1_1_sspa?crid=2L3KIDV1A3ISG&dib=eyJ2IjoiMSJ9.zN0ukQmj2yv_bVtT4hl-bIqoH_lgKB_HvoIzatKpiRZyAT5rufDqc2pERk0v-13U6EQlbzQX1mApNWEWzvEu7a-X9d_acfeLfFs-B1aKIOvL27nqroALY5vfy--LsdiWw264DCwNfmi7Fn7u17yrrDsgBdPSxV7N1J8Y0Pb_LHOQLrIHT_hoFt1LYCI0AhqKLaeosZukuf4z74hVnl4csagBJ0Pkkg1VirpZPALidC8.FMKGGRp_AbpOR-ROuw5uZjA9pBfL4AUvFhnQL6BU9Sg&dib_tag=se&keywords=tablet&qid=1773052009&sprefix=tablate%2Caps%2C396&sr=8-1-spons&aref=rCKWlM19ol&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> <button >Add to Cart</button></a>
+    </div>
+<div class="product">
+        <img src="pod.png">
+        <h3>Apple AirPods</h3>
+        <p class="price">₹16,990 </p>
+       <a href="https://www.amazon.in/Apple-AirPods-Generation-MagSafe-USB%E2%80%91C/dp/B0CHX719JD/ref=sr_1_1?crid=PJF92MUKCTJQ&dib=eyJ2IjoiMSJ9.YbI3tXYKBY6dF-5K5aqoD_58d8HWKGSTr8Fm2zxN5n07chPZRpvnzFy63udOJn8uMPzlGE59z-T3yQgMwfVaknPnbH3d7bIUM9IBiamRT8SwrIcPIIByEp7DI1ZrwOUHVUABmDgdtgXJTOsJo3iVPilRVtZ1Ecxc4Fp3iruytWPskvHWxvnElaAs9XyyMBHn7HF3hXc9nh91_6TWb9XRR_o-KYT0dByJnWSRe3vXyqk.-3O9oweLEVzgR0o8ncts0ggMCO7bBV6bp29qQwml3IM&dib_tag=se&keywords=apple+white+pod&nsdOptOutParam=true&qid=1773052903&sprefix=apple+white+pod%2Caps%2C407&sr=8-1"> <button>Add to Cart</button></a>
+    </div>
+ <div class="product">
+        <img src="tv.png">
+        <h3>Sony 108 cm (43 inches) TV</h3>
+        <p class="price">₹41,590</p>
+       <a href="https://www.amazon.in/Sony-inches-BRAVIA-Google-K-43S25M2/dp/B0F7XFCHK4/ref=sr_1_5?crid=1CKSKMYHJR8XF&dib=eyJ2IjoiMSJ9.rV1jOIVunxisLyuRC3dzMaSY3fyDlvrCzrg_xywfe7myCDmL-eioydBIqfkRePagGdIEASspREImI8soelM2FhbnrCz2Kj845RftKVGg69k47RPc8KDuOjoS36JblaN6KHer6OX4Ne_t7EZ3ZKUfF1FbEVXYdyaWLOL4BxjJunHZw6cshfsCmm8K9NAHC1Bt3IuifdaSLZpPPJCIIhB3ips9GCVyK1GOmfIQZ_Dk1-0.1sUmGjhYwS5InNkH32Ca1zjsJt-whw4MFm0EJmoCF9A&dib_tag=se&keywords=sony%2Bhd%2Btv&qid=1773053911&sprefix=sony%2Bhd%2Btv%2Caps%2C436&sr=8-5&th=1"> <button>Add to Cart</button></a>
+    </div>
+
+   </div> 
+</section>
+<section id="cloth">
+<hr>  
+<h1>Clothing</h1>
+
+
+<div class="container">
+
+  <div class="product">
+        <img src="shirt.png">
+        <h3>Lacoste Men Shirts </h3>
+        <p class="price">₹10,000</p>
+       <a href="https://www.amazon.in/Lacoste-Mens-Slim-Shirts-CH5253BMY_Green_BMY/dp/B0DVT1K113/ref=sr_1_5?crid=16J7X93U6MTO9&dib=eyJ2IjoiMSJ9.ncSUpg6HcYnO6tmfduDLRVdH3UjHpodR6GpPaUT9GkIHOjjh_q_slMxvUoG5tgp9NoXQnS67P28LIP1HPkuwj_E2OKFX_CKBjx53WglGcBFhUYSRAw2mOUq_kFziDw0V4xBUpsHg-HwTXhYes3tDa3hj6McnaDqOy6LmNySt3pVWYLzU9MMDIL7I8nO0X_MdzlLFylwDSjiGaFZzrCmCdh6ETUN7NPuFAM3wybbAZs4-hWEHzfDxWbRCujp89hHdcPZEoWaUhHPax0dYcaVcLAiAOm69EWvKv2U9mWPvAoo.A2EtYo17TrKISb3vAXx1UgTysFhdqlzCw8hMESvWRcw&dib_tag=se&keywords=lacoste%2Bshirt&qid=1772624787&sprefix=casoste%2Bshirt%2Caps%2C411&sr=8-5&th=1&psc=1"> <button >Add to Cart</button></a>
+    </div>
+ <div class="product">
+        <img src="bag.png">
+        <h3>Lavie Signature Bags </h3>
+        <p class="price">₹2,759  </p>
+       <a href="https://www.amazon.in/Lavie-Signature-Handbag-Stylish-Shoulder/dp/B0F9YQQC47/ref=sr_1_4_sspa?crid=1L4RQ9S0ZBQU2&dib=eyJ2IjoiMSJ9.qxX5oqFhGbQb4FgWOWrqv4oFYO7SrmaEGU7uHxoXbUhq-jvqdXMmrAmCfEu-fbGWKHsCsp_ztWm3l2OwGNXVSKtAtOIOsiF3kfqnRjNSCQlKBCGug9YuFl4LFyNrg7ozJgCRW2-euNiGaZSI3BhgP1OTk1hgHYCmSE0goxWgj2rlLGRxcSHsp2FjHb8uaItp2rb8zpzT404o4ulSHc256oBjmdqocC5Ai__RWE84f0l2t2TKRqgYEEMgmDszzN27I5EwhyCq9qaKFinPEL0xOrKbMc4nuH7PSkNaXiuXgAY.mokrEslIB23dPIhyYNcJtT6k25ldoWcdjOCMu1gmp-0&dib_tag=se&keywords=gucci%2Bbags%2Bfor%2Bwomen%2Boriginal&qid=1773662936&sprefix=gucci%2B%2Caps%2C617&sr=8-4-spons&aref=z6u79aGO5x&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&psc=1"> <button>Add to Cart</button></a>
+    </div>
+
+  <div class="product">
+        <img src="jeans.png">
+        <h3>Men's Cotton Stretch Jeanst</h3>
+        <p class="price">₹1,499 </p>
+       <a href="https://www.amazon.in/Symbol-Premium-Stretch-Regular-Blue_34/dp/B0DPKLHYRL/ref=sr_1_1_sspa?crid=251CU6CB7HV9X&dib=eyJ2IjoiMSJ9.I14RnZ9Tqe6AAFEaBkENy9CUiz5GhMYjwBW2sT30Ph9teSNmxlzJLi4a-fz7J2ZPC8YsEws5c0ybsFukxx36H73ryW0eaYEMIGZX7hdKfQbqagtSen1VM6pFIBI9Kes4TihHZdOUfaMWRBakpKP0AnDKMYuQSvh0tw-S8Y3lgsRADd7AoXMq7JoGOO4XJsRuAYj76MoV2ykfD8dVeytdXIj5XE69IJeyWSB5blbL69q90jOJrukgKWy_gnLMKq4GYGVzi_WDlTB37nvUTn-AcADARNb-OSPAV_OCJ0WaRcQ.rMxsCX4_U3aZp0ZzdMMIzcSAt1EH_JGg1xnMH3HNGW8&dib_tag=se&keywords=classic%2Bblue%2Bjeans&qid=1773830572&sprefix=classic%2Bblue%2Caps%2C434&sr=8-1-spons&aref=twsD1vHozy&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&psc=1"> <button>Add to Cart</button></a>
+    </div>
+</div>
+<div class="container">
+<div class="product">
+        <img src="hoody.png">
+        <h3>Sweatshirt for Men </h3>
+        <p class="price">₹449</p>
+       <a href="https://www.amazon.in/FN3-Zipper-Hooded-Sweatshirt-Hoodies/dp/B0FY2R7T7H/ref=sr_1_18?crid=JUW71I6TEQE&dib=eyJ2IjoiMSJ9.18XkqvLwk3XDfKvaz2-ZgtfNlGmlTHp8RH5k6_ikxGSvB7yGxZE6DF1JGrSPlHrTpm-_UnkVQYHLPwHSC0MWhJ6l5HGiRgXj2Hkr17b2PVDwRW906pWQ0MoXgVYUPJww2bq8kzqSRNZOcqCHsGPBFmBjSUFcML4b6AFbFz_Pb8Lp3Estwh8e92dDDYDTmT39WsSgwN4PruKeCDbSTR3YREQo9UgVkrTU0a4rDQXbW6-a4AUCrnexFq_458lnjUrramnf9G1BCwV1n8sACMmA7oFuJ5BQfa7Jk-HfVcr_MUM.ueP0mFZQKRvMhRAv577FzgcwipB0YN0xhmA74dvlQ7Y&dib_tag=se&keywords=hoodies%2Bfor%2Bmen&qid=1774240827&sprefix=hoodies%2Bfor%2Bmen%2Caps%2C367&sr=8-18&th=1&psc=1"> <button>Add to Cart</button></a>
+    </div>
+
+ <div class="product">
+        <img src="dress.png">
+        <h3>Women's Dress</h3>
+        <p class="price">₹409 </p>
+       <a href="https://www.amazon.in/Womens-Bandhani-Tiered-Sleeve-Square/dp/B0GCNRWHJZ/ref=sr_1_13?crid=1W9I79RBZIIIH&dib=eyJ2IjoiMSJ9.yRcK6ROAW7Ie-rY2qvpgFkp9VUbg-4aKKBFH2D-9soYffqMIHPt6cBe3V_ifa9l7e5mtrfEVNJiHqQG2NkJUmX8DxZp6ssUD6W21G0huJC233pmd4Stpzjfk0sekT2ftHVm-JhqEqr1XwYGjtA4H9FwzmhpUgaSe8ZTy6ef2vZBo3m_RHNgijtM5bXPIXgT3OSWmYvSwan1BY1IUz17LfkFRs0TtOK7KHqDEntqXV3VYXHqQ4lqPke4Tf_pmljAdM340ZW27J4CCQnKVPxp4TZ_5WugfFPyBEU3vjVrwRnI.01bIEtaNiN5QgKaxZHb5zzL1PRglDzhZ1xFwJd-SRLM&dib_tag=se&keywords=women%2Bdresses&qid=1774241236&sprefix=women%2Bdresses%2Caps%2C2341&sr=8-13&th=1&psc=1"> <button>Add to Cart</button></a>
+</div>
+<div class="product">
+        <img src="kurti.png">
+        <h3>Women Kurta</h3>
+        <p class="price">₹403</p>
+       <a href="https://www.amazon.in/GoSriKi-Chikankari-Embroidered-Straight-Pink-NW-GS_XL_Pink_X-Large/dp/B0D183VVN7/ref=sr_1_11?crid=CBSYE74IQ15L&dib=eyJ2IjoiMSJ9.wEJfWvG6_f7-qrNrjOdynwKxZfz9flqtF1Qk2_LXPqVmRN28jvPfsxYmptH5sR9urpyl8Kjcc6ZZZJZrCCxjfy4X7HGodCBFyDs9i0rP8d_92YQXdFIR9e3YrQZa87uc7jdeTDKEP4VoZdhwPIQ-AJZ5_yoph_NnM-GH23_79GfrHCeUfQ5IzYUWo4u68jo8Nbtjf98XL5H2jioTkAzLTJG3w9fIynPBecfiRftG-icyMycbmWmTT0CM-1gA9yLGRGTUh4emMaV7Vp2m6b2LOVELK3B0UjVOoU5adE5PVog.T6efOpccdpSPt0sysErw0TM0p2gQH4vGvrtxWCUi6cY&dib_tag=se&keywords=pink%2Bkurti%2Bfor%2Bwoman&qid=1774242388&sprefix=pink%2Bku%2Caps%2C1338&sr=8-11&th=1&psc=1"> <button>Add to Cart</button></a>
+</div>
+</div>
+</section>
+<section id="book">
+<hr>
+<h1>Books</h1>
+<div class="container">
+<div class="product">
+        <img src="harryb.png">
+        <h3>Harry Potter Box Set 1 to 7</h3>
+        <p class="price">₹3,475 </p>
+       <a href="https://www.amazon.in/Harry-Potter-Part-Box-Set/dp/8183221203/ref=sr_1_1_sspa?crid=2IOZCYZINVLIB&dib=eyJ2IjoiMSJ9.fCn-2zQK6ITUsjFO7ZBRW7eSJku0gFLm21I3wP1ZmFt9h780CZG4tRyZ1Zm3p7FMxcuIt9UZKkaaGajlKv-pLXww_iGo5jxFGOmMagiFShs5Is7OzMThKCUgP7d4ZXDDS1WBAaORhfrbEgTWEN20Ie-f7CPlmOXUaVvSy-qe3-MjlyEpvMMHJMW-xlTAHDA3kObmi2A-Pee4hMzJIGzxSyO_Cz9ldrYWzLnpHnmA5ww.mV0jf3LijChYrtKhSNIo647g7lCpXwf9GIfxVVDsc1w&dib_tag=se&keywords=harry+potter+books+set+1-8&qid=1774242957&sprefix=harry+books%2Caps%2C343&sr=8-1-spons&aref=7myCUx0Wo2&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1#customerReviews"> <button>Add to Cart</button></a>
+
+</div>
+
+<div class="product">
+        <img src="lordb.png">
+        <h3>The Lord of the Rings: The Fellowship of the Ring </h3>
+        <p class="price">₹119</p>
+       <a href="https://www.amazon.in/s?k=lotr&crid=2MY7JU8KGCO8&sprefix=lotr%2Caps%2C1273&ref=nb_sb_noss_1"> <button>Add to Cart</button></a>
+
+</div>
+
+
+<div class="product">
+        <img src="gotb.png">
+        <h3>A Song of Ice and Fire - A Game of Thrones: The Complete Boxset of 7 Books</h3>
+        <p class="price">₹2,754</p>
+       <a href="https://www.amazon.in/Kashmir-Willow-Proflax-Cricket-Harrow/dp/B0B1X4LRRL/ref=sr_1_21_sspa?crid=1O4QQYDMIBZM3&dib=eyJ2IjoiMSJ9.Z2TurLwN0Vl_nd70SCzDTqXzwXqXFC0XaVqM_kJbTLy5X0kO8vHfw_bKtNiH5fkT-V6ib-MpvW7dpsyLuRXF6jZYDazfs_vzbJFN9AY6WhhZEU_WyJ3MTC8I_KQ1b7SU4PcJdEHu3CwcHeSTkldGuO1cfEnNftggQ8G6VsChSUJbyfB9EgCYRghPVDE4BcCnG7uzxYdPICShuFKWrcKhBIuHPDdIYvY9fmnKcgbbExorI4LpUwbiEdSjWYH-nxOEFvOqqWB_seBinT208FAqcIUDFYtIZmsnRyTyC6I1Daw.xRtXXijCGxjjnos9gvO1GqOunD_PCBo9R_zzHvt6f3w&dib_tag=se&keywords=leather%2Bbat%2Bfor%2Bcricket%2B50k&qid=1773052499&sprefix=leather%2Bbat%2Bfor%2Bcricket%2B50k%2Caps%2C459&sr=8-21-spons&aref=rpSCFoYUHa&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1"> <button>Add to Cart</button></a>
+
+</div>
+</div>
+<div class="container">
+<div class="product">
+        <img src="duneb.png">
+        <h3>THE GREAT DUNE TRILOGY</h3>
+        <p class="price">₹748 </p>
+       <a href="https://www.amazon.in/GREAT-DUNE-TRILOGY-Frank-Herbert/dp/0575070706/ref=sr_1_1_sspa?crid=1INE0UWHSKNZ4&dib=eyJ2IjoiMSJ9.X0qjTdobD9o99AQPq0tIpFtUvTied5Df4OnY-ZkuKSMaP2DoBvZX5UbM3JjFHt78WdtFr4c58te2Z7-hCVsuQLNUN4DRQN1czbNa8xvJ9Xky9FuMFN90Vj9GlHB0Vjv2HXMTUBRwiNpTQaC_-1_jXpcrejunOwVPehluhrxY3Rp6X8fS-XiXN0M6eXc9FE-q1bclod8Fup1USC77D_GqgbXjBm3H5xujCgFwd1Fwjmc.kP801qgjJkbPxl1ffmTyl14-TTErmLWPLhL2k-HwQpw&dib_tag=se&keywords=dune+book&qid=1774244093&sprefix=dune%2Caps%2C388&sr=8-1-spons&aref=YovsNvHNtc&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> <button>Add to Cart</button></a>
+
+</div>
+<div class="product">
+        <img src="wotb.png">
+        <h3>THE WHEEL OF TIME BOXED SET 2 (BOOKS 4-6) </h3>
+        <p class="price">₹1,494  </p>
+       <a href="https://www.amazon.in/WHEEL-TIME-BOXED-SET-BOOKS/dp/035651885X/ref=sr_1_5?crid=UYDPXADBEOFS&dib=eyJ2IjoiMSJ9.vpnZ1mzgcfo5K3LrcA0TJsoGx0oQ75tmKuiKWg6oexDnOGeA-P4nq6eZtBcchmoktJjuEI-Wo5QpccYVSdrhxhgmMsngPHi6DZbSBnxU1w6hq8zFd2nsXhiuSRF9GrPkZ2Nd7i7xTI_CMRbTsZ5pbXoxYdsBDNs3OpLSeIG55_XpwBv4bEFu9da68CV-sVCTTkDtL-eajsphDo0q-Wv1KTP5Wp0su6nZiOBu0iETJYQ.yIvF-npJNjzuUhxwUGwRYrC9-jS4rJe9I9jIikzBris&dib_tag=se&keywords=wheel+of+time&qid=1774244482&sprefix=wheel+of+tim%2Caps%2C425&sr=8-5"> <button>Add to Cart</button></a>
+
+</div><div class="product">
+        <img src="atomicb.png">
+        <h3>Atomic Habits: Tiny Changes, Remarkable Results</h3>
+        <p class="price">₹491  </p>
+       <a href="https://www.amazon.in/dp/1847941834/?bestFormat=true&k=atomic%20habits&ref_=nb_sb_ss_w_scx-ent-bk-ww_k0_1_5_de&crid=6IQ0R7UHHOIB&sprefix=atomi"> <button>Add to Cart</button></a>
+
+</div>
+</div>
+</section>
+<section id="ha">
+<hr>
+<h1>Home Appliances</h1>
+<div class="container">
+    <div class="product">
+        <img src="toaster.png">
+        <h3>KENT Crisp Pop Up Toaster 750 Watts </h3>
+        <p class="price">₹1,048</p>
+       <a href="https://www.amazon.in/KENT-Crisp-Pop-Toaster-16105/dp/B09P3ZFTXG/ref=sxin_14_pa_sp_search_thematic_sspa?content-id=amzn1.sym.7e2c8ac4-9f12-4bcd-9497-a8ae54bc8764%3Aamzn1.sym.7e2c8ac4-9f12-4bcd-9497-a8ae54bc8764&crid=2ZHO2HIAHI9AB&cv_ct_cx=toaster&keywords=toaster&pd_rd_i=B09P3ZFTXG&pd_rd_r=f1a023a2-e8d7-45ba-99a0-e15d2ae89f72&pd_rd_w=WzCOd&pd_rd_wg=rWfOC&pf_rd_p=7e2c8ac4-9f12-4bcd-9497-a8ae54bc8764&pf_rd_r=ECK0QCGBNVZS68D811YR&qid=1774245729&s=books&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=%2Cstripbooks%2C388&sr=1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons&aref=zBDY621Kt5&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1"> <button >Add to Cart</button></a>
+    </div>
+  <div class="product">
+        <img src="af.png">
+        <h3>KENT Digital Air Fryer 8L</h3>
+        <p class="price">₹5,899</p>
+       <a href="https://www.amazon.in/gp/aw/d/B0DGKY4WLP/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=84b45e1ecbce79516efe7bee93a558ea&hsa_cr_id=0&qid=1774246048&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&aref=Z9JfFC1aeA&ref_=sbx_s_sparkle_sbtcd_asin_0_img&pd_rd_w=AXbJE&content-id=amzn1.sym.9269eab1-ae85-443b-9ec2-b2fa4ebaad05%3Aamzn1.sym.9269eab1-ae85-443b-9ec2-b2fa4ebaad05&pf_rd_p=9269eab1-ae85-443b-9ec2-b2fa4ebaad05&pf_rd_r=2P0W3Y68NBP5A4Y7C3H7&pd_rd_wg=6KacY&pd_rd_r=82c6ed74-5911-4555-af95-b88e58492353&th=1"> <button >Add to Cart</button></a>
+    </div>
+  <div class="product">
+        <img src="hd.png">
+        <h3>Hair Dryer for Woman & Man</h3>
+        <p class="price">₹2,503</p>
+       <a href="https://www.amazon.in/VEGA-Professional-1800-2000W-Settings-VPVHD-04/dp/B0BFHT6J3N/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.jV3bgytoB1Lm6TjAsBVFwYMa7EN6arAcrB_ko-yEAZOJSK24Y62iKIvAHy7s0TGV6KcrlzRwCwv2nXwsDOD7wjJDC9Lyux2B-fg047hKJkAHLqOlDXOdu2yZJiOHT6A5aMXCicHwk_Z9Tj-iakfeNU_Lt4-orYYT3QUlB6sEB5WrmAmKDreFW4RYbKJQp2nN61vwEXOlnvOlOQuhHVAB5xRVQdV2XxKV9hiz9R_gWerHTVem3jnYA4RS_qfRx7lHVMykKwi5R-EtuX0LsWUjddsSDVtSfsMCgTQAmR0xCJw.9xBm-8IVnOaDypmcxmHw72YUG544x69zlJRRZtZPnv4&dib_tag=se&keywords=hair%2Bdryer%2Bfor%2Bwoman&qid=1774246281&sr=8-1-spons&aref=DAlkEjip98&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"> <button >Add to Cart</button></a>
+    </div>
+</div>
+<div class="container">
+  <div class="product">
+        <img src="oven.png">
+        <h3>IBELL Electric Oven</h3>
+        <p class="price">₹6,083</p>
+       <a href="https://www.amazon.in/IBELL-Convection-Motorized-Rotisserie-EO40LGDLX/dp/B0GNMSV8QK/ref=sr_1_1_sspa?crid=1VET3CNYUU9DI&dib=eyJ2IjoiMSJ9.dP6E_YEoxw81-JWRFYApw7H2KlYneiOgiJB2WOoNRcReGDLz8BD_1hRxGNc5rjPCCvXLVIcZvyl2nSNc3y1NTSsqDR3yF_W7TFaegUhUSILdfKpEDCJS0pfq8ceAidBMpNjynU8VvM3ZMpiOJtrJahjRtqTCo8Bag84V6eMB7njhZnaQhQAGikg-_oAjzR6srKp3UhkvUKrTaxbnTtgiPXc0IKb5gL45vfWjqL6YdNA.QoY-31SPpQXom4cvly5sbf6948OdB-qGsL8VfGEz0H4&dib_tag=se&keywords=oven%2Bmicrowave&qid=1774246506&sprefix=ov%2Caps%2C365&sr=8-1-spons&aref=SKOGCQWX5m&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"> <button >Add to Cart</button></a>
+    </div>
+<div class="product">
+        <img src="induc.png">
+        <h3>Induction Stove</h3>
+        <p class="price">₹4,399 </p>
+       <a href="https://www.amazon.in/BLUETRAX-Classic-2200-Infrared-Stir-fry/dp/B0GS6QLKSN/ref=sr_1_2_sspa?crid=3NK9NZ33MNCOX&dib=eyJ2IjoiMSJ9.n1N21Ye00l7TZFndvTM16bNQz4lxXahIYiRuMiqLdhKHrI6xYgKS6mwjCHUDxi_80BNAK4mpW2pEV-1EWEXTKjobfKg5xuudl16JNA_CMLraYdlsNJGiUXuQ6NZfjIzN1OQgwkr9GgvsUXzbvICNfCuzA6Lji-9d2O926imc4djWACn-J4LBnQsSgnsvhD69IOQyy7jdNYfZnDrTzJpyIJjRHU2UQBt37Vx_EGU5kqI.IyYQzaeKC5KxWFvAz1lZAb7Nb3_hHmfWhsz24VMKI0M&dib_tag=se&keywords=induction+stoves+prestige&qid=1774246867&sprefix=in%2Caps%2C612&sr=8-2-spons&aref=7yaXHWgbKF&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> <button >Add to Cart</button></a>
+    </div>
+<div class="product">
+        <img src="frig.png">
+        <h3>Haier 596L 3Star 2 Door Side by Side Frost Free Refrigerator</h3>
+        <p class="price">57,990</p>
+       <a href="https://www.amazon.in/Haier-Inverter-Refrigerator-HES-690SS-P-Convertible/dp/B0BZ12FPM1/ref=sr_1_1_sspa?crid=HJXRN36WP0E&dib=eyJ2IjoiMSJ9.LlsTCPx2wkHiVOu1XfCLF8pJafxJCE8opcAemS_qD6_P0qMvsk24d9AJYgRV8pbrmKL2ofAGaZkTiQMJP5uTRJaqVWAnfek3rujmuUr7P87XZIAhKx8pwT0RaTNLR3AyzItPKns1Bj1a7YaD5aK2b6gIbXdgZHC1XUo_XR0l2foTrbuQ2Ro9tWIPql4OUi1iKgdDwEs79hNYVQoealfztyF8jb4ja_6HM9TfKx04hEs.nM9pSOSMFF5gqy6Ool4BIGQZ_xy_I6eUXZtH4Dj6c5E&dib_tag=se&keywords=fridge%2Bdouble%2Bdoor%2Bfridge%2B5%2Bstar&qid=1774247500&sprefix=fri%2Caps%2C370&sr=8-1-spons&aref=ylPUA45xF3&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"> <button >Add to Cart</button></a>
+    </div>
+</div>
+</section>
+<section id="sport">
+<hr>
+<h1>Sports </h1>
+<div class="container">
+
+<div class="product">
+        <img src="lbat.png">
+        <h3>Slovic Cricket Bat </h3>
+        <p class="price">₹799</p>
+       <a href="https://www.amazon.in/Slovic-Cricket-Outdoor-Lightweight-Practice/dp/B0FTYX24DN/ref=sr_1_1_sspa?crid=24OG2EI3NOVQ5&dib=eyJ2IjoiMSJ9.nQhVlmSr6zB6qoOAJCYkAkkKwKqNkVterCaG1UQ5IwjdLgN4sc7_UE8wOJYVabjaCAgCaswqKKTZNcpH9zp9s2N5vqheshKW2mwFHWbMyEhzDs54RybbeXDnwHWqSq8rRtYxleRSc5AxNaEVC5flPjfVUcj5ELHNOLaAjL5diToL_VndYznVY6hkdSsoYQCIyRB2GOIdHeZPuvPUw-bN_Yqsi28W5lv0l9qxmR4yauIEkVVaN2UgF2NxXd6PguWTE2y2NMPHx9I2FxVIQM7oHRfLp8Hw1k1jXsdIQPt4n_U.jPt1O7a56dpHgyBwX4DiqfwT2hby60t5_sp8CCbODLU&dib_tag=se&keywords=bat&qid=1774248942&sprefix=bat%2Caps%2C443&sr=8-1-spons&aref=Zkg8aC8uLH&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> <button >Add to Cart</button></a>
+    </div>
+
+
+
+<div class="product">
+        <img src="football.png">
+        <h3>Boldfit Blaze Football</h3>
+        <p class="price">₹349</p>
+       <a href="https://www.amazon.in/gp/aw/d/B0FRNJ8VJS/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=5f8bd4ece25361c68ccd4e4ac1a04f31&hsa_cr_id=0&qid=1774249419&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&aref=ZoLILkt8mZ&ref_=sbx_s_sparkle_sbtcd_asin_0_title&pd_rd_w=SzDQL&content-id=amzn1.sym.9269eab1-ae85-443b-9ec2-b2fa4ebaad05%3Aamzn1.sym.9269eab1-ae85-443b-9ec2-b2fa4ebaad05&pf_rd_p=9269eab1-ae85-443b-9ec2-b2fa4ebaad05&pf_rd_r=J4YQM25RQ8FJANMZ08SE&pd_rd_wg=rs2y7&pd_rd_r=920f9792-36d2-4d53-8871-17846b9c8116"> <button >Add to Cart</button></a>
+    </div>
+
+<div class="product">
+        <img src="badr.png">
+        <h3>Boldfit Boldstrike Badminton Rackets</h3>
+        <p class="price">₹399 </p>
+       <a href="https://www.amazon.in/gp/aw/d/B0GPVHQWB5/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=54aef166f044a27ca3f8b8572aa5abad&hsa_cr_id=0&qid=1774249528&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&aref=dbo0d6SLGP&ref_=sbx_s_sparkle_sbtcd_asin_0_img&pd_rd_w=wfF0a&content-id=amzn1.sym.9269eab1-ae85-443b-9ec2-b2fa4ebaad05%3Aamzn1.sym.9269eab1-ae85-443b-9ec2-b2fa4ebaad05&pf_rd_p=9269eab1-ae85-443b-9ec2-b2fa4ebaad05&pf_rd_r=8S7QVH55GNKH4GYS0Y7Z&pd_rd_wg=NHRSb&pd_rd_r=54aca884-2d08-4cbd-94d8-e1939530f513&th=1"> <button >Add to Cart</button></a>
+    </div>
+
+</div>
+
+<div class="container">
+   
+<div class="product">
+        <img src="basket.png">
+        <h3>STRAUSS Official Basketball</h3>
+        <p class="price">₹422</p>
+       <a href="amazon.in/Strauss-Official-Basketball-Size-Orange/dp/B082KQDWK3/ref=sr_1_1_sspa?crid=319DCFHK9R7HG&dib=eyJ2IjoiMSJ9._6XJZOOnNnmH028uKl6F1egNfm2nMn0ceog1r4OBMZDsVrE-zK3bO3iwE_1MYzV3s7OASApynRAbV7mXx0KVUMyvqUqjxQqc-76qF0ra0t0ZF8_0MbhxOjUplKnAimXzsNgaRfh_F5mPTn9I73G75Emw2w-DOiSCjGynWZUV0CoeD7OJRJKRH4K5SCDA_Gx9dD7t5JaG4BpOej4r7hkDeCh_HUknslZ6eLI8oBFxPi29VUFmqudzSRY318vuO-mKaTl62y6_Xv94nTe06Kkv7EXPNibwgoAsSrUtzRbed0Q.Gv_Ay8uSHX30gqUT-RQn5CYqu4QkL7-P33C1UPr2VlE&dib_tag=se&keywords=basketball&qid=1774249851&s=sports&sprefix=basketball+s%2Csporting%2C552&sr=1-1-spons&aref=m1b3uDywwA&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> <button>Add to Cart</button></a>
+    </div>
+
+<div class="product">
+        <img src="glove.png">
+        <h3>Boldfit Gym Gloves</h3>
+        <p class="price">₹348 </p>
+       <a href="https://www.amazon.in/gp/aw/d/B0BN1YPDSR/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=2950cfe294b579fd6f25a2fde0a2ab0b&hsa_cr_id=0&qid=1774249972&sr=1-2-e0fa1fdd-d857-4087-adda-5bd576b25987&aref=Aiz2nULQUh&ref_=sbx_s_sparkle_sbtcd_asin_1_img&pd_rd_w=QwXNg&content-id=amzn1.sym.9269eab1-ae85-443b-9ec2-b2fa4ebaad05%3Aamzn1.sym.9269eab1-ae85-443b-9ec2-b2fa4ebaad05&pf_rd_p=9269eab1-ae85-443b-9ec2-b2fa4ebaad05&pf_rd_r=73WVE4Z3NCYH2QWZ4NMB&pd_rd_wg=ixMBS&pd_rd_r=240003f6-8827-42db-b9de-f8611b36b612&th=1"> <button>Add to Cart</button></a>
+    </div>
+<div class="product">
+        <img src="tennis.png">
+        <h3>Boldfit Tennis Cricket Ball </h3>
+        <p class="price">₹189 </p>
+       <a href="https://www.amazon.in/Boldfit-Tennis-Cricket-Tournament-Lightweight/dp/B0FQJYGGQW/ref=sr_1_2_sspa?crid=1D9RHCPBR6ZK3&dib=eyJ2IjoiMSJ9.ZmyXPwds0ETdCfibQSsItSb5lhU3ienH-IyUGFwMXJXjVjzb2oLpSeX2bvfKwFLEYUtWKBxZJkfzM0nAHw0yx4utc3zq158uFN5DnUkkWeb9_3YzB3HkQnPKdhAm2f20WzSbS5w6yDtXJq7oajRzHhqw4x7LnAu1H_iJgozP3p0kP8rSJSXmNBP1C2JRDScqZHRzQuYJnXnmnweJviyKA9834FsuXnsRUWgAQFtkMjn8KlR4cNiZ_QBkOMNbS1Yv9FwwfeFMfx5zS29EmkPgZsGWbHmfQVxxIos0CoSVFMk.Wa8GUFPKYpsQO-PVrcd_z4dnoIpGCDaChtHqHSMHmr8&dib_tag=se&keywords=tennis+ball&qid=1774250118&s=sports&sprefix=tennis+ball+%2Csporting%2C377&sr=1-2-spons&aref=1kFuPlosff&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> <button>Add to Cart</button></a>
+    </div>
+</div>
+</section>
+<section id="bp">
+<hr>
+<h1>Beauty Products</h1>
+<div class="container">
+
+<div class="product">
+        <img src="mk.png">
+        <h3>Blue Heaven MakeUp Kit</h3>
+        <p class="price">₹640 </p>
+       <a href="https://www.amazon.in/Blue-Heaven-Festive-Vanilla-Multicolour/dp/B09HSPHL7M/ref=sr_1_6_in_f3_0o_fs_mod_primary_alm?crid=11HV6684BA5U2&dib=eyJ2IjoiMSJ9.6d7axUmrzfqj1hohzVm3bmC43UozHNwKyyTh9TR9QIoG8cQqsh2_PxvYfFQrUy_ALSdjLKM_EAiGG3YL_15WeupiVu2Xh1Gs5sYZNlsllTodb81FdTLBTNmHpwsJ9wjN8sgx4L5JLjTBq6Ell3M3woJ7y-5tWCRTuU9cj7pvKS0SxseStoLOf7hml0noHAJyqHk4P_0sgNe7orpvv_he8qGtM6euyDVPWUyG91DhrjZ016z_UoVGTvyXaFwUe7d1n4gMBXQ0n8B2DTZXmdZIHld-D6iZ1ri-e5zpVzYtEkQ.lV4_JxQA903Znl-yRMjM-A2pwdN0-SxB1BfSgGpEajY&dib_tag=se&keywords=maybelline%2Bmakeup%2Bkit&qid=1773054632&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sprefix=maybelline%2Bmakeup%2Bkit%2Caps%2C453&sr=8-6&th=1"> <button>Add to Cart</button></a>
+    </div>
+
+        
+    <div class="product">
+        <img src="fw.png">
+        <h3>Himalaya Purifying Neem Face Wash</h3>
+        <p class="price">₹335 </p>
+       <a href="https://www.amazon.in/Himalaya-Purifying-Neem-Face-Wash/dp/B07XS46Q73/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.5W6S-AIOsZ-XpmMnF2v96kASGJ6q-YeujMS5CM4nzaFob9yTnn-Qd2Go1F0IHwrkRowy_XQ6gYMeeMdqdOB58wJSATANNsgYuZz9oICvqfrXEoWlqF4jNhTsupKYQZZf7vpAGcAKbxASwPBZvQsznUfr1lvJj5X6wY55o9mTI-JoDS1UFZu7-OqN1iprHACdZpdHlqGMwDKXSDhVbnNhHNr1jYPhYrjCYhYzeJtvmMpgaarSR-cV5mPTras9EJ6p3ZyF943Fmc7NbLfXgT5yTyK50BybXWWCDq_5biI2y-E.DN_Up0dDlaKjqLc__NZM4Mn_z21LpEtgxQjkMXUmP5I&dib_tag=se&keywords=face%2Bwash&qid=1774250564&sr=8-1-spons&aref=GpL3PIIbIG&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"> <button>Add to Cart</button></a>
+    </div>
+
+    <div class="product">
+        <img src="hs.png">
+        <h3>Hyphen Brightening Face Serum  </h3>
+        <p class="price">₹590</p>
+       <a href="https://www.amazon.in/Hyphen-Niacinamide-Arbutin-Hyaluronic-Hydration/dp/B0CGVK7LKD?ref_=ast_sto_dp"> <button >Add to Cart</button></a>
+    </div>
+</div>
+<div class="container">
+
+  <div class="product">
+        <img src="cs.png">
+        <h3>Cetaphil Oily Skin Cleanser</h3>
+        <p class="price">₹976</p>
+       <a href="https://www.amazon.in/gp/aw/d/B0D78W8K62/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=525c3a53bb902b5a20a7732d840285a2&hsa_cr_id=0&qid=1774252362&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&aref=OmwMZ7Qd4h&ref_=sbx_s_sparkle_sbtcd_asin_0_img&pd_rd_w=KUAih&content-id=amzn1.sym.9269eab1-ae85-443b-9ec2-b2fa4ebaad05%3Aamzn1.sym.9269eab1-ae85-443b-9ec2-b2fa4ebaad05&pf_rd_p=9269eab1-ae85-443b-9ec2-b2fa4ebaad05&pf_rd_r=4ASN7YNPJB2CE955DKFV&pd_rd_wg=YYte3&pd_rd_r=08016419-7efd-4d35-8812-2166a233b004"> <button>Add to Cart</button></a>
+    </div>
+<div class="product">
+        <img src="mini.png">
+        <h3>Minimalist Sunscreen </h3>
+        <p class="price">₹664 </p>
+       <a href="https://www.amazon.in/Minimalist-Sunscreen-Clinically-Lightweight-Multi-Vitamins/dp/B0DHY6LQTW/ref=sr_1_1_sspa?crid=3AJTG79LOFVKP&dib=eyJ2IjoiMSJ9.yjpRI0aDN-1s-MtzV6z7EJJOZXHOcIzmTofPmoK6kN1sV4GLa1PBlLmL58sV-gzeOijR7S6Du5DMXnceIwITLDISzOWklpplGJXywf9bsPUHyWbWX8dyQ3oVUqtHSP7zuoquraf9hQvJc4sAxMI3peMXyzIc_M-EY_84B4FMN2dVxaopxiDMzqUhblZ29gIgcXU_EAUrlLY9v06G0j0YhuJljKlzh4DljWbNS9GYD8YNQHUNr9EjybVglkmhpP37PANdduXlQoXnjPVK5F3zGdtUj4S2T1gEqXPzzMyHmlY.jrqISgNClEBfO8ebEJyqXA4aHNj8OTnjtmdLElcFHMY&dib_tag=se&keywords=minimalist%2Bsunscreen%2Bspf%2B50&qid=1774252481&s=beauty&sprefix=mini%2Cbeauty%2C340&sr=1-1-spons&aref=RkUvPI1i2c&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"> <button>Add to Cart</button></a>
+    </div>
+<div class="product">
+        <img src="derma.png">
+        <h3>The Derma Co 1% Kojic Acid Face Wash</h3>
+        <p class="price">₹239 </p>
+       <a href="https://www.amazon.in/Derma-Co-Niacinamide-Arbutin-Pigmentation/dp/B0C2D82CX6/ref=sr_1_6?crid=VM3WZKQZ8GMD&dib=eyJ2IjoiMSJ9.x_bGnuly8msX0naGlAx--wHsXv9eybDBx9RGI-nV2mvQkiZagSnJJujaXf-_1S8N4wIjPzyaDYqQoSYorLIVWfaa8u_LDN2Py-U_ouCl4N5SVSdb-OhAZy7YY7MGHxg58mERS-ajqJRSv3wV3aCYsOKi8yM-Mpn8sOCInSUYpjFAR0AxAvPvwQvCJcDXwo4jkKV_CkNB5VSDgV3mzAAS-Xv9cq8icjPtn0ZGMmaKIReE764emAuQAGLFlHoQpkTkcp-8nZzYA8rgqZ8KscGm_2a6MITljWyXKTYTSEyXyMM.4Mf1ZzwT8VcqO0H8zQo4a1R84sls0MuUOdbdUxPdMZ8&dib_tag=se&keywords=derma%2Bco%2Bfacewash&qid=1774260856&s=beauty&sprefix=%2Cbeauty%2C328&sr=1-6&th=1"> <button>Add to Cart</button></a>
+    </div>
+
+</div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<footer>
+    <h3>My Online Shop</h3>
+    <p>Your one-stop destination for Electronics, Clothing, Books, Sports, and Beauty Products.</p>
+    <p>© 2026 My Online Shop. All Rights Reserved.</p>
+    <p>Designed by Kartik</p>
+</footer>
+
+</body>
+</html>
